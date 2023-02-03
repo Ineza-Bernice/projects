@@ -354,7 +354,7 @@ hr{
     }
 @media(max-width:1200px){
     .sidebar{
-    width: 60px;
+    width: 100px;
     overflow-y: scroll;
     }
     .content{
@@ -375,6 +375,9 @@ hr{
     .video-content-cover{
         grid-template-columns: 1fr;
 }
+    .sidebar{
+        width:60px
+    }
 .search-container, 
 .ri-grid-fill{
     display: none;
@@ -386,4 +389,34 @@ hr{
 .header{
     padding-right: 10px;
 }
+.video-content-cover:hover{
+    transform: none;
+}
+.video-content-cover:nth-child(4n+1):hover{
+    transform: none;
+}
+.video-content-cover:nth-child(4n+4):hover{
+    transform: none;
+}
+.video-content-cover .video-details{
+    padding: 35px;
+    padding-top: 12px;
+}
+.video-content-cover:hover .channel-logo{
+    min-width: 35px;
+    height: 35px;
+}
+.video-content:hover .title {
+    font-size: .9rem;
+}
+.video-content:hover .channel-name {
+    font-size: .8rem;
+}
+.video-content:hover .views-upload {
+    font-size: .8rem;
+}
+.video-content:hover .hidden-content {
+    display: none;
+}    
+    
 }
